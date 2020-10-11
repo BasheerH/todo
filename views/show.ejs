@@ -1,0 +1,46 @@
+<%- include('partials/header') %>
+
+<div class="container">
+
+    <div class="container" id="shel">
+     
+        <h3 id="todo_list"><%= todo.name%><p style="font-weight: normal;">Created at <%= todo.createdAt.toDateString()%>
+            </p>
+            <form action="/todo/<%= todo._id%>?_method=DELETE"" method="POST"> 
+                <button class="btn btn-danger">DELETE</button>
+            </form>
+    
+        </h3>
+
+        <form action="/todo/<%= todo._id %>/line" method="POST">
+            <input type="text" name="line" placeholder="Add todo list here" maxlength="40" required >
+            <!-- <button>Add</button> -->
+
+        </form> 
+
+        <ul class="note list-group list-group-flush" >
+            <% todo.line.forEach(function(line){ %>
+            <li class="b">
+                <form action="/todo/<%= todo._id%>/line/<%= line._id%>?_method=DELETE" method="POST" >
+                    <button class=" btn btn-xs btn-danger x">X</button>
+                    <p style="display: inline;"><%=line.text%></p>
+                </form>
+            </li>
+            <% }) %>
+        </ul>
+    </div>
+
+</div>
+
+
+
+
+<script>
+    $("ul.note").on("click", "li.b", function () {
+        $(this).toggleClass("grey")
+
+    })
+</script>
+
+
+<%- include('partials/footer') %>

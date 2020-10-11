@@ -1,0 +1,143 @@
+body {
+
+    background-color: #ffa751;
+
+}
+.r_c{
+    background: rgba(255, 255, 255, 0.438);
+    width: 360px;
+    margin: 200px auto;
+    padding: 20px;
+    border-radius: 10%;
+    box-shadow: 0 0 3px rgba(0,0,0,0.4);
+
+}
+.butt_submit{
+    background-color: rgba(128, 0, 0, 0.226);
+    border-radius: 10%;
+    margin: 0;
+    align-self: flex-end;
+}
+/* ________________ to dos _____________________- */
+#butt-new{
+    background-color: rgba(255, 255, 255, 0.383);
+    font-weight: bold;
+    border-radius: 20%;
+    margin-top: 20px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.4);
+}
+
+#b_n{
+    font-weight: 400;
+    margin: 0;
+    
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.383);
+    margin: 0 auto;
+    border-radius: 10%;
+    box-shadow: 0 0 3px rgba(0,0,0,0.4);
+}
+/* ____________ the list______________ */
+.grey{
+    text-decoration: line-through;
+    color: rgb(179, 179, 179) !important;
+ 
+}
+.trash{
+    float: right;
+    color: red;
+    background-color: white;
+    padding: 9px 10px;
+    margin-bottom: 1px;
+    border-radius: 30%;
+
+}
+
+#shel{
+    background-color: rgba(255, 255, 255, 0.383);
+    width: 400px;
+    /* height: auto; */
+    padding: 10px;
+    margin: 200px auto;
+    border-radius: 5%;
+    box-shadow: 0 0 3px rgba(0,0,0,0.4); 
+    
+}
+#todo_list{
+    background: #ff7f50;
+    color: white;
+    padding: 25px 20px;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: normal;
+    border-radius: 15px 15px 0 0 ;
+            
+}
+input{
+    font-size: 18px;
+    background: #f7f7f7;
+    width: 100%;
+    padding: 13px 13px 13px 20px;
+    box-sizing: border-box;
+    color: rgba(102, 102, 102);
+    outline: none;
+    border: 0 ;
+    
+    
+}
+input:focus{
+    background: rgba(255, 255, 255);
+    border: 2px solid #ffffff;
+    outline: none;
+}
+
+::placeholder{
+    color: #666;
+    opacity: 0.5;
+}
+ul.note{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+li.b{
+    margin: 0;
+    background: rgb(255, 255, 255);   
+    color: rgb(39, 39, 39);
+    height: 50px;
+    line-height: 50px;
+}
+li.b:last-child{
+    border-radius: 0 0 20px 20px ;
+}
+li.b:nth-child(2n){
+    background: #f7f7f7;
+}
+button.x{
+    background-color: crimson;
+    color: white;
+    text-align: center;
+    margin-right: 20px;
+    display: inline-block;
+    width: 0;
+    /* height: 100%; */
+    opacity: 0;
+    padding: 0;
+    border-radius: 25%;
+
+    
+}
+
+li:hover button.x{
+    width: 35px;
+    opacity: 1;
+    padding: 8px;
+    transition: 0.2s linear;
+    opacity: 1;
+
+}
+

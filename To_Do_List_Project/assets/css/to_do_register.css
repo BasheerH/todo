@@ -1,0 +1,22 @@
+.r_c{
+    background: rgba(255, 255, 255, 0.438);
+    width: 360px;
+    margin: 200px auto;
+    padding: 20px;
+    border-radius: 10%;
+    box-shadow: 0 0 3px rgba(0,0,0,0.4);
+
+}
+body {
+    /* background: linear-gradient(to bottom, #ff7f50, #ffe259); 
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size:  100% auto; */
+    background-color: khaki;
+}
+.butt{
+    background-color: rgba(128, 0, 0, 0.226);
+    border-radius: 10%;
+    margin: 0;
+    align-self: flex-end;
+}

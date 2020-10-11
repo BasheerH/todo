@@ -1,0 +1,72 @@
+<%- include('partials/header') %>
+
+<div class="container" style="margin-top: 60px;">
+
+
+    <h1 class="display-4 " style="font-size: 3rem;" >Organise your day with a list</h1>
+    <div class="row ">
+        <div class="col">
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn" data-toggle="modal" data-target="#exampleModalCenter" id="butt-new"><i
+                    class="far fa-plus-square fa-3x"></i>
+                <p id="b_n">New List</p>
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">New List</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="/todo" method="POST">
+                                <div class="form-group">
+                                    <label for="new-to-do" class="col-form-label">List Name:</label>
+                                    <input type="text" class="form-control" name="name" placeholder="todo name"">
+                                    <!-- <button>Add new one</button> -->
+                                    <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                                    <button id="butt-new-list"  class="btn btn-primary">Create</button>
+                                </div>
+                            </form>
+                            <!-- <div class=" modal-footer">
+                                </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!-- ____________________ THE NOTES GRID______________ -->
+    <div class="row my-5 justify-content-around  " id="new-list">
+        <% user.todos.forEach(function(todo){ %>
+        <div class="col-md-6 col-lg-4   my-4 align-self-center">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top"  src="http://pngimg.com/uploads/sticky_note/sticky_note_PNG18932.png">
+                <div class="card-body">
+                    <h5 class="card-title text-center"><a href="/todo/<%= todo._id%>">
+                            <%=todo.createdAt.toDateString()%> </a></h5>
+                    <p class="card-text text-center"><%= todo.name%></p>
+                </div>
+            </div>
+        </div>
+        <%})%>
+    </div>
+
+
+    <!-- js -->
+    <script type="text/javascript" src="assets/js/to_do.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+    <%- include('partials/footer') %>

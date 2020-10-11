@@ -1,0 +1,136 @@
+body{
+    
+    background: linear-gradient(to bottom, #ffa751 , #ffe259); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100% 100%;  
+    
+}
+.grey{
+    text-decoration: line-through;
+    color: rgb(179, 179, 179) !important;
+ 
+}
+.trash{
+    float: right;
+    color: red;
+    background-color: white;
+    padding: 9px 10px;
+    margin-bottom: 1px;
+    border-radius: 30%;
+
+}
+.nnav{
+    
+    background-color: #ff7f50;  
+    margin-bottom: 50px;
+    /* border:1px solid rgb(78, 78, 78); */
+}
+#shel{
+    background-color: rgba(255, 255, 255, 0.383);
+    width: 400px;
+    /* height: auto; */
+    padding: 10px;
+    margin: 200px auto;
+    border-radius: 5%;
+    box-shadow: 0 0 3px rgba(0,0,0,0.4); 
+    
+}
+h1{
+    background: #ff7f50;
+    color: white;
+    padding: 25px 20px;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: normal;
+    border-radius: 15px 15px 0 0 ;
+            
+}
+input{
+    font-size: 18px;
+    background: #f7f7f7;
+    width: 100%;
+    padding: 13px 13px 13px 20px;
+    box-sizing: border-box;
+    color: rgba(102, 102, 102);
+    outline: none;
+    border: 0 ;
+    
+    
+}
+input:focus{
+    background: rgba(255, 255, 255);
+    border: 2px solid #ffffff;
+    outline: none;
+}
+
+::placeholder{
+    color: #666;
+    opacity: 0.5;
+}
+ul.note{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+form.b{
+    margin: 0;
+    background: rgba(255, 255, 255);   
+    color: rgb(58, 58, 58);
+    height: 50px;
+    line-height: 50px;
+}
+form.b:last-child{
+    border-radius: 0 0 20px 20px ;
+}
+form.b:nth-child(2n){
+    background: #f7f7f7;
+}
+span.x{
+    background-color: crimson;
+    color: white;
+    text-align: center;
+    margin-right: 20px;
+    display: inline-block;
+    width: 0;
+    /* height: 100%; */
+    opacity: 0;
+    padding: 0;
+    border-radius: 25%;
+
+    
+}
+
+li:hover span.x{
+    width: 30px;
+    opacity: 1;
+    padding: 8px;
+    transition: 0.2s linear;
+    opacity: 1;
+
+}
+
+/* span.x :last-child{
+    border-radius: 0 0 20px 20px ;
+} */
+/* ul.note li{
+    background: rgba(255, 255, 255);   
+    color: rgb(58, 58, 58);
+    border: 0;    
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    vertical-align: 100px;
+} */
+/* li.a:nth-child(2n){
+    background: #f7f7f7;
+} */
+
+
+
+
+
